@@ -1,0 +1,6 @@
+[submodule "examples/dependencies/argtable"]
+	path = examples/dependencies/argtable
+	url = git@github.com:argtable/argtable3.git
+[submodule "examples/dependencies/libycres"]
+	path = examples/dependencies/libycres
+	url = git@github.com:yellowcake-org/libycres.git
