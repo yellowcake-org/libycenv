@@ -11,3 +11,5 @@ target_include_directories(ycenv PUBLIC include)
 target_include_directories(ycenv PRIVATE private)
 
 target_include_directories(ycenv PRIVATE dependencies/libycres/include)
+add_subdirectory(dependencies/libycres)
+add_dependencies(ycenv ycres)
