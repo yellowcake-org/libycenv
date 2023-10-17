@@ -10,5 +10,6 @@ add_library(ycenv ${YCENV_SOURCES})
 target_include_directories(ycenv PUBLIC include)
 target_include_directories(ycenv PRIVATE private)
 
-add_subdirectory(examples/dependencies/libycres)
-target_link_libraries(ycenv ycres)
+target_include_directories(ycenv PRIVATE dependencies/libycres/include)
+add_subdirectory(dependencies/libycres)
+add_dependencies(ycenv ycres)
